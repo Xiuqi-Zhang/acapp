@@ -36,6 +36,7 @@ class AcGameMenu{
         let outer = this;
         this.$single_mode.on("click", function(){
             outer.hide();
+            outer.root.playground = new AcGamePlayground(outer.root);
             outer.root.playground.show();
         });
         this.$multi_mode.on("click", function(){
